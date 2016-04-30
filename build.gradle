@@ -1,0 +1,102 @@
+buildscript {
+    repositories {
+        mavenCentral()
+		mavenLocal()
+        maven {
+            name = "forge"
+            url = "http://files.minecraftforge.net/maven"
+        }
+        maven {
+            name = "sonatype"
+            url = "https://oss.sonatype.org/content/repositories/snapshots/"
+        }
+    }
+    dependencies {
+        classpath 'net.minecraftforge.gradle:ForgeGradle:1.2-SNAPSHOT'
+		classpath 'org.pegdown:pegdown:1.4.1'
+
+    }
+}
+
+apply plugin: 'forge'
+
+minecraft {
+    version = "1.7.2-10.12.2.1121"
+}
+
+group = 'modmuss50.mods.transcraft'
+archivesBaseName = "transcraft"
+
+def ENV = System.getenv()
+if (ENV.BUILD_NUMBER) {
+    version = "3.0." + "${System.getenv().BUILD_NUMBER}"
+} else {
+    version = "3.0.BUILD"
+}
+
+
+def grabDep(name, url){
+	ant.get(src: url, dest: 'dep')
+	file("dep/" + url.substring(url.lastIndexOf("/"))).renameTo(file("dep/" + name + ".jar"))
+}
+
+dependencies {
+    def f = new File('dep/')
+    if(f.exists()){
+        f.delete()
+    }
+    f.mkdirs()
+    if(!f.exists()){
+        f.mkdir()
+    }
+	println("  Downloading dependencies!")
+	grabDep('ccl', 'http://files.minecraftforge.net/maven/codechicken/CodeChickenLib/1.7.2-1.1.1.81/CodeChickenLib-1.7.2-1.1.1.81-dev.jar')
+	grabDep('fmp', 'http://files.minecraftforge.net/maven/codechicken/ForgeMultipart/1.7.2-1.1.0.282/ForgeMultipart-1.7.2-1.1.0.282-dev.jar')
+	grabDep('ccc', 'http://www.chickenbones.craftsaddle.org/Files/New_Versions/1.7.2/CodeChickenCore-1.7.2-1.0.0-dev.jar')
+	grabDep('nei', 'http://www.chickenbones.craftsaddle.org/Files/New_Versions/1.7.2/NotEnoughItems-1.7.2-1.0.1-dev.jar')
+	println("  Adding dependencies!")
+    compile files("dep/ccl.jar", "dep/fmp.jar", "dep/nei.jar", "dep/ccc.jar")
+	println("  Finished adding dependencies!")
+}
+
+
+
+processResources
+        {
+            // replace stuff in mcmod.info, nothing else
+            from(sourceSets.main.resources.srcDirs) {
+                include 'mcmod.info'
+            }
+
+            // copy everything else, thats not the mcmod.info
+            from(sourceSets.main.resources.srcDirs) {
+                exclude 'mcmod.info'
+            }
+        }
+
+jar {
+    appendix = 'mod'
+}
+
+task deleteOldArtifacts(type: Delete) {
+    delete 'build/libs'
+}
+
+classes.dependsOn deleteOldArtifacts
+
+
+task sourceJar(type: Jar) {
+    from sourceSets.main.allSource
+    appendix = 'src'
+}
+
+
+task deobfJar(type: Jar) {
+    from sourceSets.main.output
+    appendix = 'dev'
+}
+
+artifacts {
+    archives sourceJar
+    archives deobfJar
+}

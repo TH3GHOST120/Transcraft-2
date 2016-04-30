@@ -1,0 +1,91 @@
+###############
+#Creative Tabs#
+###############
+itemGroup.Transtab=Transcraft
+
+###############
+#Miscellaneous#
+###############
+transcraft.transcrafter=Transcrafter
+tile.RGBBlock.name= RGB Block
+########
+#Blocks#
+########
+tile.Transcraft:OilOre.name=Oil Ore
+tile.Transcraft:BlueLight.name=Blue Light
+tile.Transcraft:GreenLight.name=Green Light
+tile.Transcraft:OrangeLight.name=Orange Light
+tile.Transcraft:DarkLight.name=Dark Light
+tile.Transcraft:IronTorch.name=Iron Torch
+tile.Transcraft:BunkerBlock.name=Bunker Block
+tile.Transcraft:SmoothBunkerStair.name=Smooth Bunker Stair
+tile.Transcraft:DriedTransmutter.name=Dried Transmutter
+tile.Transcraft:ComIronOre.name=Compressed Iron ore
+tile.Transcraft:ComGoldOre.name=Compressed Gold ore
+tile.Transcraft:ComTransmutterOre.name=Compressed Transmutter ore
+tile.Transcraft:ComOilOre.name=Compressed Oil ore
+tile.Transcraft:BunkerStair.name=Bunker Stair
+tile.Transcraft:ObsidianLever.name=Obsidian Lever
+tile.Transcraft:SmoothBunkerBlock.name=Obsidian Lever
+tile.Transcraft:SmoothBunkerBlock.name=Obsidian Lever
+tile.Transcraft:TranscraftOre0.name=Transmutter Ore
+tile.Transcraft:TranscraftOre1.name=Chromite Ore
+tile.Transcraft:TranscraftOre2.name=Vanadium Ore
+tile.Transcraft:TranscraftOre3.name=Zirconium Ore
+tile.Transcraft:TranscraftOre4.name=Ultimatium Ore
+tile.Transcraft:TranscraftOre5.name=Cosmonite Ore
+tile.Transcraft:Transcrafter.name=Transcrafter
+tile.Transcraft:ixpGrinder.name=Item Grinder
+tile.Transcraft:Candle.name=Candle
+tile.Transcraft:TechniumBlock.name=Technium Block
+tile.Transcraft:SinisterBlock.name=Sinister Block
+tile.Transcraft:TransmutterFlower.name=Transmutter Flower
+tile.Transcraft:plasticblock.name=Dye Block
+tile.Transcraft:Cutplastic.name=Dye Block
+tile.Transcraft:plasticBrick.name=Dye Block
+tile.Transcraft:plasticBigBricks.name=Dye Block
+tile.Transcraft:FancyCrystalGlass.name=Fancy Glass
+tile.Transcraft:ClearGlass.name=Clear Glass
+tile.Transcraft:ThinClearGlass.name=Thin Clear Glass
+tile.Transcraft:MultiEnderQuartz_CutEnderQuartz.name=RGB Block
+tile.Transcraft:MultiEnderQuartz_EnderQuartzBrick.name=RGB Block
+tile.Transcraft:MultiEnderQuartz_EnderQuartzBrick2.name=RGB Block
+tile.Transcraft:MultiEnderQuartz_enderquartz.name=RGB Block
+tile.Transcraft:EnderDigger.name=Ender Digger
+#######
+#Items#
+#######
+item.Transcraft:BasicTransmuter.name=Basic Transmutter
+item.Transcraft:QuadTransmuter.name=Quad Transmutter
+item.Transcraft:NanoTransmuter.name=Nano Transmutter
+item.Transcraft:HotDog.name=Hot Dog
+item.Transcraft:Oil.name=Oil
+item.Transcraft:Plastic.name=Plastic
+item.Transcraft:IronStick.name=Iron Stick
+item.Transcraft:HardendPlastic.name=Hardened Plastic
+item.Transcraft:EnderGem.name=Ender Gem
+item.Transcraft:EnderQuartz.name=Ender Quartz
+item.Transcraft:DarkEndershard.name=Dark Ender Shard
+item.Transcraft:Transpedia.name=Transpedia
+item.Transcraft:Technium.name=Technium
+item.Transcraft:EnderPick.name=Ender Pickaxe
+item.Transcraft:EnderSword.name=Ender Sword
+item.Transcraft:EnderHelmet.name=Ender Helmet
+item.Transcraft:EnderChest.name=Ender Chest
+item.Transcraft:EnderLegs.name=Ender Legs
+item.Transcraft:EnderBoots.name=Ender Boots
+item.Transcraft:TechniumHelmet.name=Technium Helmet
+item.Transcraft:TechniumChestplate.name=Technium Chestplate
+item.Transcraft:TechniumLeggs.name=Technium Legs
+item.Transcraft:TechniumBoots.name=Technium Boots
+item.Transcraft:FireStaff.name=Fire Staff
+item.Transcraft:PlasticPickaxe.name=Plastic Pickaxe
+item.Transcraft:PlasticShovel.name=Plastic Shovel
+item.Transcraft:PlasticAxe.name=Plastic Axe
+item.Transcraft:PlasticHoe.name=Plastic Hoe
+item.Transcraft:PlasticSword.name=Plastic Sword
+item.Transcraft:PlasticHelmet.name=Plastic Helmet
+item.Transcraft:PlasticChest.name=Plastic Chestplate
+item.Transcraft:PlasticLegs.name=Plastic Legs
+item.Transcraft:PlasticBoots.name=Plastic Boots
+item.Transcraft:ColorCopier.name=Color Copier

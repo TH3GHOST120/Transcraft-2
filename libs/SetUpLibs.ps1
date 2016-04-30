@@ -1,0 +1,13 @@
+$client = New-Object system.net.WebClient;
+write-output "Downloading Code Chicken Core";
+$client.DownloadFile("http://www.chickenbones.craftsaddle.org/Files/New_Versions/1.7.2/CodeChickenCore-1.7.2-1.0.0-dev.jar", "CCC.jar");
+write-output "Downloaded Code Chicken Core";
+write-output "Downloading Code Chicken Lib";
+$client.DownloadFile("http://files.minecraftforge.net/maven/codechicken/CodeChickenLib/1.7.2-1.1.0.76/CodeChickenLib-1.7.2-1.1.0.76-dev.jar", "CCL.jar");
+write-output "Downloaded Code Chicken Lib";
+write-output "Downloading Not Enough Items";
+$client.DownloadFile("http://www.chickenbones.craftsaddle.org/Files/New_Versions/1.7.2/NotEnoughItems-1.7.2-1.0.1-dev.jar", "NEI.jar");
+write-output "Downloaded Not Enough Items";
+write-output "Downloading Forge Multi Part";
+$client.DownloadFile("http://files.minecraftforge.net/maven/codechicken/ForgeMultipart/1.7.2-1.1.0.273/ForgeMultipart-1.7.2-1.1.0.273-dev.jar", "FMP.jar");
+write-output "Downloaded Forge Multi Part";
